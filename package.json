@@ -1,0 +1,30 @@
+{
+  "name": "rich-people",
+  "version": "1.0.0",
+  "description": "A list of the richest people in the world",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server",
+    "server": "nodemon server",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm "
+  },
+  "keywords": [
+    "rich",
+    "people",
+    "sort"
+  ],
+  "author": "Darren SooHoo",
+  "license": "ISC",
+  "dependencies": {
+    "create-react-app": "^3.4.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.9.2"
+  },
+  "devDependencies": {
+    "concurrently": "^5.1.0",
+    "nodemon": "^2.0.2"
+  }
+}
