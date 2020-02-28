@@ -6,6 +6,7 @@ const app = express();
 app.use(express.json({ extended: false }));
 
 //Define Routes
+app.use('/api/items', require('./routes/items'))
 
 
 // Serve static assets in production
